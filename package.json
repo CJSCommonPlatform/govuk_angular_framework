@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "name": "@govuk/angularjs_framework",
+  "name": "@govuk/angularjs-framework",
   "main": "./dist/index.js",
   "dependencies": {},
   "devDependencies": {
@@ -28,6 +28,10 @@
     "angular": "^1.5.3",
     "angular-permission": "^2.3.4",
     "angular-ui-router": "^0.2.18"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/npm/npm.git"
   },
   "scripts": {
     "build_dist": "tsc",
