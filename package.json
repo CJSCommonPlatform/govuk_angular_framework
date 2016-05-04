@@ -1,0 +1,41 @@
+{
+  "version": "0.1.0",
+  "name": "@govuk/angularjs_framework",
+  "main": "./dist/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "angular": "^1.5.3",
+    "angular-mocks": "^1.5.5",
+    "angular-permission": "^2.3.4",
+    "awesome-typescript-loader": "^0.17.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "1.7.0",
+    "phantomjs-prebuilt": "^2.1.7",
+    "source-map-loader": "^0.1.5",
+    "tsify": "^0.15.3",
+    "tslint": "^3.7.4",
+    "tslint-loader": "^2.1.4",
+    "typescript": "^1.8.10",
+    "typings": "^0.7.12",
+    "watchify": "^3.7.0",
+    "webpack": "^1.13.0"
+  },
+  "peerDependencies": {
+    "angular": "^1.5.3",
+    "angular-permission": "^2.3.4",
+    "angular-ui-router": "^0.2.18"
+  },
+  "scripts": {
+    "build_dist": "tsc",
+    "prebuild_dist": "rm -rf dist",
+    "lint": "tslint src/**.ts || true",
+    "prepublish": "npm run typings && npm run build_dist",
+    "test": "node --max-old-space-size=4096 node_modules/karma/bin/karma start",
+    "typings": "typings install"
+  },
+  "typings": "./dist/index.d.ts"
+}

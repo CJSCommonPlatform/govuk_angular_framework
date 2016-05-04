@@ -1,0 +1,17 @@
+# Coverage directory used by tools like istanbul
+coverage
+
+# IDE
+.idea
+
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules
+typings
+
+# Logs
+*.log
+
+# Test
+test
+karma.conf.js
