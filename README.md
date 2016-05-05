@@ -1,4 +1,4 @@
-## @govuk/angularjs_framework
+## @govuk/angularjs-framework
 
 Core module containing angular functionality.
 
